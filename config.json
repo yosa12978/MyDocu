@@ -1,0 +1,13 @@
+{
+    "db": {
+        "username": "user",
+        "password": "1234",
+        "dbName": "saturationDB",
+        "dbHost": "localhost",
+        "dbPort": "5432"
+    },
+    "api": {
+        "addr": "0.0.0.0:5000",
+        "logLevel": "debug"
+    }
+}
