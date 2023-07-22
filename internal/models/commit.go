@@ -2,8 +2,8 @@ package models
 
 type Commit struct {
 	BaseModel
-	Name       string `json:"name"`
-	Body       string `json:"body"`
+	Desc       string `json:"desc"`
+	Content    string `json:"Content"`
 	UserId     uint   `json:"UserId"`
 	DocumentId uint   `json:"documentId"`
 }
