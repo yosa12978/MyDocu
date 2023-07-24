@@ -1,8 +1,8 @@
 package models
 
-type Role uint8
+type Role string
 
 const (
-	ROLE_USER Role = iota
-	ROLE_ADMIN
+	ROLE_USER  Role = "USER"
+	ROLE_ADMIN Role = "ADMIN"
 )

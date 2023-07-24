@@ -39,7 +39,7 @@ func (repo *documentRepo) GetDocument(id uint) (models.Document, error) {
 
 func (repo *documentRepo) SearchDocuments(q string) []models.Document {
 	var docs []models.Document
-	repo.db.Model(&models.Document{}).Where("commit. LIKE %?%", q).Find(&docs)
+	repo.db.Model(&models.Document{}).Where("title LIKE %?%", q).Find(&docs)
 	return docs
 }
 

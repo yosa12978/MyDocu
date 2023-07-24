@@ -6,7 +6,6 @@ RUN go mod download
 COPY . .
 RUN go build -o mydocu ./cmd/MyDocu/main.go
 
-
 FROM alpine:3.17
 
 WORKDIR /app
